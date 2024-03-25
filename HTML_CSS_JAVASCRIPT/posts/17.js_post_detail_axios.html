@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <object type ="text/html" data ="header.html"></object>
+    <div class="container">
+        <div class="page-header"><h1>게시글 상세 조회</h1></div>
+        <div class="float-end">
+            <a href="./7.css_bootstrap_postregister.html"><button type="button" class="btn btn-primary">글쓰기</button></a>
+        </div>
+        <div>
+            <input type="text" id="postNumber">
+            <button onclick="loadPost()">게시글 조회</button>
+        </div>
+        <table class="table">
+            <tr>
+                <td>id : </td>
+                <td id="idParam"></td>
+            </tr>
+            <tr>
+                <td>title : </td>
+                <td id="titleParam"></td>
+            </tr>
+            <tr>
+                <td>contents : </td>
+                <td id="contentsParam"></td>
+            </tr>
+            <tr>
+                <td>authorId : </td>
+                <td id="authorIdParam"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+
+        async function loadPost(){
+            try{
+                const response1 = await axios.get('http://localhost:8080/csr/json' + document.getElementById("postNumber").value);
+                document.getElementById("id").innerHTML = response1.data.id;
+                document.getElementById("title").innerHTML = response1.data.title;
+                document.getElementById("contents").innerHTML = response1.data.body;
+                document.getElementById("authorname").innerHTML = response1.data.author_name;
+            }catch(e){
+                console.log(e);
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,2 @@
+practice merge(rebase)
+main 브랜치에서 branch 생성 후 commit 1개 이상 발생, pr 및 merge(rebase)

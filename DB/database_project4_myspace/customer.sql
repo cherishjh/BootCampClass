@@ -1,0 +1,1 @@
+create table CUSTOMER(id int, user_id VARCHAR(255) not null, name VARCHAR(255) not null, password VARCHAR(255) not null, tel CHAR(11) not null, address VARCHAR(500) not null, age int, gender CHAR(1), point BIGINT, alarm CHAR(1) default 'Y', signin_date DATETIME, coupon VARCHAR(255), primary key(id));

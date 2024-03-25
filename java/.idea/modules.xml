@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_grammer/java_grammer.iml" filepath="$PROJECT_DIR$/java_grammer/java_grammer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/major_algorithm/major_algorithm.iml" filepath="$PROJECT_DIR$/major_algorithm/major_algorithm.iml" />
+    </modules>
+  </component>
+</project>

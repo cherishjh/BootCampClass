@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js function</title>
+    <script>
+        function basicFunction1(){
+            alert("함수 호출 완료")
+        }
+        function basicFunction2(){
+            alert(makeString1())
+        }
+        function makeString1(){
+            return "hello world1"
+        }
+        const makeString2 = function(){return "hello world2"}
+        const makeString3=()=>"helllo world3"  //return 생략 가능
+        
+        function basicFunction3(name){
+            alert("hello " + name)
+        }
+        function basicFunction4(a,b){
+            total=a+b;
+            alert("합계: "+total)
+        }
+        function basicFunction5(...numbers){
+            total=numbers.reduce((a,b)=>a+b,0)
+            alert("합계: "+total)
+        }
+
+// 계산기 프로그램
+
+
+function Function1(){return 1;}
+function Function2(){return 2;}
+function Function3(){return 3;}
+function Function4(){return 4;}
+function Function5(){return 5;}
+function Function6(){return 6;}
+function Function7(){return 7;}
+function Function8(){return 8;}
+function Function9(){return 9;}
+function Function0(){return 0;}
+function Add(...numbers){
+    total= numbers.reduce((a,b)=>a+b,0)
+    alert(total)
+}
+function subtract(){
+    total= numbers.reduce((a,b)=>a-b,0)
+    alert(total)
+}
+function multiply(){
+    total= numbers.reduce((a,b)=>a*b,0)
+    alert(total)
+}
+function divide(){
+    total= numbers.reduce((a,b)=>a/b,0)
+    alert(total)
+}
+
+    </script>
+</head>
+<body>
+    <h2> js 기본 함수 호출</h2>
+    <button onclick="basicFunction1()">함수 호출 </button>
+    <button onclick="basicFunction2()">함수 호출 </button>
+    <button onclick="basicFunction3('Jessi')">함수 호출 name</button>
+    <button onclick="basicFunction4(1,2)">함수 호출 sum</button>
+    <button onclick="basicFunction5()">함수 호출 sum</button>
+
+    <h2>계산기 프로그램</h2>
+    <div>
+        <label> 사칙 연산 선택</label>
+        <select id="calculator">
+            <option value="plus">덧셈</option>
+            <option value="minus">뺼셈</option>
+            <option value="multiply">곱셈</option>
+            <option value="divide">나눗셈</option>
+        </select>
+        <input type="text" class = "values">
+        <input type="text" class = "values">
+        
+        <button onclick="calculator()">연산 실행 </button>
+    </div>
+
+    <script>
+        function calculator(){
+            const what = document.getElementById("calculator").value
+            let values = document.getElementsByClassName("values")
+            let value1=Number(values[0].value);
+            let value2=Number(values[1].value);
+
+
+            if(what==='plus'){
+                
+            } else if(what==='minus'){
+
+            } else if(what==='multiply'){
+
+            }  else if(what==='divide'){
+
+            }  
+        }
+
+
+
+
+
+    </script>
+    <!-- <button onclick="Function1()">1 </button>
+    <button onclick="Function2()">2 </button>
+    <button onclick="Function3()">3</button>
+    <button onclick="Function4()">4</button>
+    <button onclick="Function5()">5</button>
+    <button onclick="Function6()">6</button>
+    <button onclick="Function7()">7</button>
+    <button onclick="Function8()">8</button>
+    <button onclick="Function9()">9</button>
+    <button onclick="Function0()">0</button>
+    <button onclick="Add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button> -->
+
+
+
+    
+</body>
+</html>

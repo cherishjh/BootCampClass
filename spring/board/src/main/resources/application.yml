@@ -1,0 +1,35 @@
+spring:
+  session:
+    storage-type: redis
+  redis:
+    host: localhost
+    port: 6379
+
+  # 임시 계정/ 임시 비밀번호
+  security:
+    user:
+      name: user
+      password: PasswordEncoder.encode(1234)
+
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/board_spring
+    username: root
+    password: 1234
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+#      로그 파일 경로와 파일명 지정
+  file:
+    name: logs/app.log
+  level:
+#      trace < debug < info <error 순서의 로그 레벨을 가짐
+#         info로 설정시 trace, debug 로그는 출력되지 않음
+    root: info
+

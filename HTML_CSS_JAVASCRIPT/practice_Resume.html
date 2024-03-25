@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Resume</title>
+    <script>
+        const add_textbox = () => {
+            const box = document.getElementById("box");
+            const newP = document.createElement('p');
+            newP.innerHTML = "<input type='text'> <input type='button' value='삭제' onclick='remove(this)'>";
+            box.appendChild(newP);
+        }
+        const remove = (obj) => {
+            document.getElementById('box').removeChild(obj.parentNode);
+        }
+    </script>
+    <button onclick="register()">등록</button>
+</head>
+<body>
+
+    <header>
+        <h1>이력서 등록</h1>
+      </header>
+      
+      <main>
+        <section>
+            <p> 성함 </p> <input type="text" class = "values">
+            <p> 이메일 </p> <input type="text" class = "values"> 
+            <p> 파일 </p> <input type="text" class = "values"> <button onclick="findFile()"> 파일 찾기 </button> 
+        
+        </section>
+    <div>
+        <form>
+            <div id="box">
+                <input type="text"> <input type="button" value="파일 추가" onclick="add_textbox()">
+            </div>
+        </form>
+    </div>
+
+    <h2>이력서 입력 </h2>
+    <label>항목1</label>
+    <input type="text">
+    <div id="target"></div>
+    <button onclick="addItem()">항목 추가 </button>
+   
+    <script>
+        let count =1;
+        function addItem(){
+            let myTarget= document.getElementById("target")
+            count++;
+            myTarget.innerHTML+="<label>항목"+count+"</label><input type='text'><br>"
+        }
+        // function remove(){
+        //     let myTarget = document.getElementById("target")
+        //     myTarget.innerHTML="";
+        // }
+    </script>
+
+    
+</body>
+</html>

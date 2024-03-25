@@ -1,0 +1,49 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.11'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.encore'
+version = '0.0.1-SNAPSHOT'
+java {
+	sourceCompatibility = '11'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+//로그인 및 인증을 위한 security 라이브러리 추가
+	//주의 사항: 해당 라이브러리를 프로젝트에 추가하면 바로 프로젝트 전역에 인증요구가 적용된다.
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+//	타임리프에서 security 문법을 쓰기 위한 라이브러리
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+
+//	spring boot app에서 redis를 사용하기위한 스타터 패키지
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+//	세션 스토리지를 redis에 저장하기 위한 패키지
+	implementation 'org.springframework.session:spring-session-data-redis'
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

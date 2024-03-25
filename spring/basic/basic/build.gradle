@@ -1,0 +1,62 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.11'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.encore'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '11'
+}
+
+repositories {
+	//의존성 (라이브러리)를 가져오는 대상 repository(저장소) -->중요!
+	//내부망에 구축되어 있는 프로젝트의 경우 nexus와 같은 라이브러리를 사용하여 내부망 repository 사용
+	// maven { url "http://nexus.XXXXX.com:8081/nexus/content/groups/public/" }  --> 회사만의 고유 레포 주소를 이렇게 표현할 수 있다(교양)
+	mavenCentral()
+}
+
+//라이브러리
+//starter 종속성은 별도의 버전관리 필요없음
+dependencies {
+	//타입리프 관련한 의존성
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	//웹 서비스 : 스프링 mvc를 가지고 있음 (model view controller)  --> 스프링 mvc 구조의 web서비스 관련 의존성
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	//테스트를 위한 의존성
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//DB 연결 위한 의존성: jdbc, mariadb 클라이언트
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.mariadb.jdbc:mariadb-java-client'
+
+
+	//Getter, Setter
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+
+	//spring data jpa 의존성 추가
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	//mybatis 관련 의존성 추가
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+
+//	jsp를 위한 라이브러리 추가
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+//  jstl 문법 사용시에 아래 의존성 추가
+//	implementation 'javax.servlet:jstl'
+
+//	swagger 사용을 위한 의존성 추가 (프론트엔드와 소통을 위해 필요하기 때문에 보통 RESTApi에 필요하다)
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+
+
+
+}
+
+tasks.named('test') {
+	//테스트 라이브러리로 주로 JUNIT 을 사용
+	useJUnitPlatform()
+}

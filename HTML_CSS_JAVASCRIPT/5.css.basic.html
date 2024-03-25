@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASIC</title>
+    <style>
+       body {
+            background-color: aliceblue; 
+       }
+       p{
+        background-color: gainsboro;
+        /* text 디자인 */
+        letter-spacing: 2px;
+        word-spacing: 5px;
+       }
+       .italic{font-style: italic;}
+       .bigtext{font-size: 24px;}
+       .relativetext{ font-size: 120%;}
+
+
+       .em_parent{font-size: 20px;}
+       .em_child{font-size: 1.5em;}
+       .percent_parent{font-size: 12px;}
+       .percent_child{font-size: 150%;}
+
+
+    </style>
+</head>
+<body>
+    <h2> CSS BASIC</h2>
+    <p> 우선 적용</p>
+    <p class= "italic bigtext">font style과 font size 중첩적용1</p>
+    <p class= "italic relativetext">font style과 font size 중첩적용2</p>
+
+    <!-- em: 배수, percent: 퍼센트 비교 -->
+    <div class="em_parent">
+        <div class="em_child">
+            이 텍스트는 부모 글꼴의 1.5배 크기의 글꼴입니다.
+            
+    </div>
+    <div class = "percent_parent">
+        <div class="percent_child">
+            이 텍스트는 부모 글꼴의 150% 크기의 글꼴입니다. 
+        </div>
+    </div>
+
+    <div style="border: 15px solid powderblue; padding: 30px;">
+        margin, border, padding을 가진 요소 
+
+    </div>
+    <div style="padding-left: 20px;">
+        왼쪽 padding 만을 가진 text 요소
+
+    </div>
+
+    <div style="border: solid black; align-content: center;padding-bottom: 3px;">
+        <div>
+            <table border="1" style="border-collapse: collapse; text-align: center; margin-left: auto; margin-right: auto;">
+                <caption>테이블 명</caption>
+                <tr >
+                    <th>제목1</th>
+                    <th>제목2</th>
+                </tr>
+                <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                </tr>
+                <tr>
+                    <td>내용A</td>
+                    <td>내용B</td>
+                </tr>
+                <tr>
+                    <td>내용10</td>
+                    <td>내용20</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+</html>

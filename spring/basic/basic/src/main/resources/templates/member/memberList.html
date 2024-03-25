@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>memberList</title>
+</head>
+<body>
+<div th:replace="member/header::headerFragment"></div>
+<table>
+    <tr><th>Name</th><th>Email</th></tr>
+    <tr th:each = "memberResDto : ${memberList}">
+        <td th:text ="${memberResDto.name}"></td>
+        <td th:text ="${memberResDto.email}"></td>
+<!--        member?id=xx 방식으로 요청-->
+<!--        @는 th의 링크 url 표현식-->
+        <td><a th:href="@{/member/find(id=${memberResDto.id})}">상세보기</a></td>
+    </tr>
+
+</table>
+
+</body>
+</html>

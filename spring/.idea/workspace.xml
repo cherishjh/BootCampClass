@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a31bcd6e-7f21-4f45-8c57-fecc0e31b692" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/classProject_ordering/itemimage/4_cnady.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classProject_ordering/itemimage/4_strawberry.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classProject_ordering/itemimage/5_cnady.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classProject_ordering/itemimage/6_strawberry.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/src/main/java/com/encore/board/Post/Service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/java/com/encore/board/Post/Service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/item/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/item/domain/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/member/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/member/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/order/controller/OrderingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/order/controller/OrderingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/order/dto/OrderReqDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/order/dto/OrderReqDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/security/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/classProject_ordering/src/main/java/com/encore/classProject_ordering/security/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classProject_ordering/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/classProject_ordering/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2eAB4egS9GwDDO1B5SWT0CHCrM3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Playdata/Desktop/class/spring/board",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a31bcd6e-7f21-4f45-8c57-fecc0e31b692" name="Changes" comment="" />
+      <created>1711337313361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711337313361</updated>
+      <workItem from="1711337315633" duration="35000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ordering_msa_eureka/class_ordering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ordering_msa_gateway/class_ordering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ordering_msa_item/class_ordering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ordering_msa_ordering/class_ordering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ordering_service/class_ordering" vcs="Git" />
+  </component>
+</project>

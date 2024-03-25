@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> 상세보기 </title>
+    <style>
+        #update-form{
+            display: none;
+        }
+
+    </style>
+    <script>
+        function reveal(){
+         document.getElementById('update-form').style.display='block';
+        }
+    </script>
+</head>
+<body>
+<div th:replace="member/header::headerFragment"></div>
+    <p> 이름: <span th:text="${member.name}"></span></p>
+    <p> 이메일: <span th:text="${member.email}"></span></p>
+    <p> 패스워드: <span th:text="${member.password}"></span></p>
+    <p> 가입일시: <span th:text="${member.create_time}"></span></p>
+<button onclick="reveal();">수정</button>
+<a th:href="@{/member/delete(id=${member.id})}"><button>삭제</button></a>
+
+<div id="update-form" >
+        <p> id : <input type="text" name="id" th:value="${member.id}" readonly></p>
+        <p> 이름 : <input type="text" name="name" th:value="${member.name}"></p>
+        <p> email : <input type="text" name="email" th:value="${member.email}" readonly></p>
+        <p> password : <input type="text" name="password" th:value ="${member.password}"></p>
+        <p><input type = "submit" value ="수정 완료"></p>
+    </form>
+</div>
+
+
+<!--<table>-->
+<!--    <tr><th>Name</th><th>Email</th><th>password</th><th>가입일시</th></tr>-->
+<!--        <td th:text ="${member.name}"></td>-->
+<!--        <td th:text ="${member.email}"></td>-->
+<!--        <td th:text ="${member.password}"></td>-->
+<!--        <td th:text ="${member.create_time}"></td>-->
+<!--</table>-->
+</body>
+</html>

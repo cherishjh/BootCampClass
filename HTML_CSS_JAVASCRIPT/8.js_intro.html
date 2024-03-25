@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_intro</title>
+</head>
+<body>
+    <h2>javascript 변수와 출력</h2>
+    <button onclick="variableConsole1()">console1에 변수 출력하기</button>
+    <button onclick="variableConsole2()">console2에 배열 출력하기</button>
+    <button onclick="variableConsole3()">console3에 배열 출력하기</button>
+    
+    <h2> javascript 변수 선언 키워드 </h2>
+    <button onclick="varExample()">var예제 </button>
+    <button onclick="letExample()">let예제</button>
+    <button onclick="constExample()">const예제</button>
+    
+    <h2>tag 선택, class 선택, id 선택</h2>
+    <button onclick="changeTextById()">id 선택 후 change </button>
+    
+    <p id="change1"> 변경대상 id</p>
+    <button onclick="changeTextByClass()">class 선택 후 change</button>
+   <!-- 버튼 클릭 시 변경 완료, fontsize up, fontcolor  -->
+    <p class="class1"> 변경대상 class</p>
+    <p class="class1"> 변경 대상 class</p>
+   
+    <button onclick="changeTextByTag()">tag선택 후 change</button>
+
+
+    <script>
+        function variableConsole1(){
+            var x=10;
+            var y ='10';
+            console.log(x+y);
+        }
+
+        function variableConsole2(){
+            var arr=[10,"20",30,"40"];
+            var total=0;
+            var arr2=[10,20,30,40];
+            for(i=0; i<arr2.length; i++){
+                total +=arr2[i];
+            }
+
+            //console로 출력
+            console.log('total: '+ total)
+
+            //popup으로 출력 : 확인 누르기전까지 이후 코드 실행 안됨 
+            // window.alert("total : " + total);
+            alert("total :" + total)
+            //popup으로 출력: 확인 누르기전까지 이후 코드 실행 안됨 
+            document.write("total : " + total)    // 화면 전체를 덮어씀
+        }
+
+        function variableConsole3(){
+            var arr=[10,20,()=>{console.log("hello world");}]
+            arr[2]();
+        }
+
+
+        function varExample(){
+            //var는 같은 변수명에 재선언과 재할당 가능
+            var x=10
+            var x=20
+            console.log('varExample: '+ x)
+        }
+
+        function letExample(){
+            //let은 같은 변수명에 재할당만 가능
+            let x=20
+            x=19;
+            console.log('constExample: ' + x);
+
+        }
+
+        function constExample(){
+            //const는 변수명에 재선언과 재할당 불가능 
+            const x=10;
+            x=30
+            console.log(x);
+        }
+
+        function changeTextById(){
+            document.getElementById("change1").innerHTML="변경완료";
+            document.getElementById("change1").style.fontSize="30px";
+        }
+
+        function changeTextByClass(){
+            var arr3=document.getElementsByClassName("class1")
+            for(i=0; i<arr3.length ;i++){
+                arr3[i].innerHTML="변경완료"
+                arr3[i].style.fontSize="30px"
+                arr3[i].style.color="blue"
+            }
+            
+
+        }
+
+        function changeTextByTag(){
+            document.getElementsByTagName()
+        }
+    </script>
+</body>
+</html>

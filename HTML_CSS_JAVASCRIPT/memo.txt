@@ -1,0 +1,9 @@
+css
+1. 인라인스타일(해당 태그안에서)
+2. 내부스타일(head->style)
+3. 외부스타일(외부파일 import)
+
+js
+1. head에 script 태그
+2. body에 script 태그
+3. 외부 script import

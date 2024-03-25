@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Algorithm_study" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DB/Database_team4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DB/database_project4_myspace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DB/heejune/mariadb_syntax" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HTML_CSS_JAVASCRIPT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/git/git_study2/git_study2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/java_grammer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/java/major_algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/linux/github_heejune/linux_syntax" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring/basic/basic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring/board" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring/classProject_ordering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring/classProject_ordering/class_ordering" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring/spring_order_msa" vcs="Git" />
+  </component>
+</project>

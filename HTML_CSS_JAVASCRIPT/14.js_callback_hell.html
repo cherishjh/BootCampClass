@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js ajax</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(
+            function(){
+                $.ajax({
+                    type: "GET",
+                    url: "https://jsonplaceholder.typicode.com/posts/1",
+                    datatype: "JSON",
+                    success: function (response) {
+                        console.log(response);
+                        $.ajax({
+                            method: "POST",
+                            url: "https://naver.com",
+                            datatype: "JSON",
+                            data: response,
+                            success: function (response2) {
+                                console.log(response2);
+                                $.ajax({
+                                    method: "POST",
+                                    url: "https://daum.com",
+                                    datatype: "JSON",
+                                    data: response2,
+                                    success: function (response3) {
+                                        console.log(response3);
+                                    },
+                                    error: function (xhr, status, error) {
+                                        console.log("ERROR!!!");
+                                    }
+                                });
+                            },
+                            error: function (xhr, status, error) {
+                                console.log("ERROR!!!");
+                            }
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.log("ERROR!!!");
+                    }
+                });
+            }
+        )
+    </script>
+</body>
+</html>

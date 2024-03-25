@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- mapper DTD 선언 -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.encore.basic.repository.MybatisMemberRepository">
+    <select id="findAll" resultType="com.encore.basic.domain.Member">
+        select * from member;
+    </select>
+    <select id="findById" resultType="com.encore.basic.domain.Member" parameterType="java.lang.Integer">
+        select * from member where id=#{id};
+    </select>
+    <select id="save" resultType="com.encore.basic.domain.Member">
+        insert into member(name, email, password, created_time)  values(#{name}, #{email}, #{password},#{create_time});
+    </select>
+    <!--<insert id="save">
+        insert into member(name, email, password) values(#{name}, #{email}, #{password});
+    </insert>
+-->
+</mapper>
